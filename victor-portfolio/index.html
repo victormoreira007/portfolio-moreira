@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Victor Dos Santos Moreira — desenvolvedor Backend Java em formação.">
+  <meta name="theme-color" content="#080b12">
+  <title>Victor Dos Santos Moreira | Backend Java Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Victor Dos Santos Moreira, início"><span class="brand-mark">VDM</span><span>victor<span class="muted">.dev</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about" data-i18n="navAbout">Sobre</a>
+      <a href="#skills" data-i18n="navSkills">Tecnologias</a>
+      <a href="#projects" data-i18n="navProjects">Projetos</a>
+      <a href="#journey" data-i18n="navJourney">Jornada</a>
+      <a href="#contact" data-i18n="navContact">Contato</a>
+    </nav>
+    <button class="language-switch" id="languageSwitch" aria-label="Switch language">EN <span>↗</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="availability">Construindo minha carreira em tecnologia</span></div>
+        <p class="intro" data-i18n="hello">Olá, eu sou</p>
+        <h1>Victor Dos Santos Moreira<span class="accent">.</span></h1>
+        <h2 data-i18n="role">Desenvolvedor Backend Java em formação</h2>
+        <p class="hero-description" data-i18n="heroText">Estou no início da minha jornada em programação, estudando Java e construindo projetos para transformar conhecimento em soluções práticas.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects" data-i18n="seeProjects">Ver projetos <span>↗</span></a>
+          <a class="button button-secondary" href="#contact" data-i18n="contactMe">Fale comigo</a>
+        </div>
+        <div class="hero-meta"><span>📍 Goiás — Brasil</span><span class="meta-separator">/</span><span data-i18n="openTo">Aberto a oportunidades de aprendizado</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <!-- Adicione sua foto na pasta assets e troque o src abaixo para assets/minha-foto.jpg -->
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <div class="placeholder-initials">VDM</div>
+            <span data-i18n="minha_foto.png> Adicione sua foto</span>
+            <small><assets>
+            <minha_foto class="png"></minha_foto></small>
+          </div>
+          <img id="profilePhoto" 
+          src="minha_foto.png" 
+          alt="Foto de Victor Dos Santos Moreira" 
+          onerror="this.style.display='none'">
+          <div class="photo-tag">
+            <span class="status-dot">
+            </span> Backend Java</div>
+        </div>
+        <div class="floating-card code-card">
+          <div class="code-top"><i></i><i></i><i></i><span>hello.java</span></div>
+          <pre><span class="code-purple">public class</span> <span class="code-yellow">Developer</span> {
+  <span class="code-purple">public static void</span> main(String[] args) {
+    <span class="code-green">learn</span>();
+    <span class="code-green">build</span>();
+    <span class="code-green">repeat</span>();
+  }
+}</pre>
+        </div>
+        <div class="visual-orbit"></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+      <span class="section-index">01 /</span><h2 data-i18n="aboutTitle">Sobre mim</h2></div>
+      <div class="about-grid">
+        <div><p class="large-copy" data-i18n="aboutLead">Curiosidade, consistência e vontade de construir.</p></div>
+        <div class="about-text">
+          <p data-i18n="aboutText">Sou estudante de programação com foco em Backend Java. Estou desenvolvendo minha base em lógica, orientação a objetos e ferramentas usadas no dia a dia de desenvolvimento. Meu objetivo é evoluir por meio de projetos práticos e conquistar minha primeira oportunidade na área.</p>
+          <p class="subtle" data-i18n="aboutNote">Este portfólio acompanha minha evolução: vou atualizar habilidades e projetos conforme aprender e construir coisas novas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><span class="section-index">02 /</span><h2 data-i18n="skillsTitle">Tecnologias & estudos</h2></div>
+      <p class="section-subtitle" data-i18n="skillsSubtitle">Minha trilha atual de aprendizado. Os níveis representam o estágio de estudo, não certificações.</p>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon java-icon">☕</div><h3>Java</h3><p data-i18n="javaLevel">Estudando fundamentos</p><span class="skill-track"><i style="width:35%"></i></span></article>
+        <article class="skill-card"><div class="skill-icon">⌘</div><h3>Git & GitHub</h3><p data-i18n="gitLevel">Praticando versionamento</p><span class="skill-track"><i style="width:25%"></i></span></article>
+        <article class="skill-card"><div class="skill-icon">▤</div><h3>SQL</h3><p data-i18n="sqlLevel">Em aprendizagem</p><span class="skill-track"><i style="width:10%"></i></span></article>
+        <article class="skill-card"><div class="skill-icon">◈</div><h3>HTML & CSS</h3><p data-i18n="webLevel">Construindo interfaces</p><span class="skill-track"><i style="width:25%"></i></span></article>
+        <article class="skill-card"><div class="skill-icon">JS</div><h3>JavaScript</h3><p data-i18n="jsLevel">Fundamentos planejados</p><span class="skill-track"><i style="width:8%"></i></span></article>
+        <article class="skill-card future-card"><div class="skill-icon">↗</div><h3>Spring Boot</h3><p data-i18n="futureLevel">Próxima etapa da trilha</p><span class="future-label" data-i18n="comingSoon">A estudar</span></article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading"><span class="section-index">03 /</span><h2 data-i18n="projectsTitle">Projetos selecionados</h2></div>
+      <p class="section-subtitle" data-i18n="projectsSubtitle">Projetos reais, feitos durante meus estudos. Abra o código para acompanhar a evolução.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-art art-java"><span class="art-symbol">☕</span><span class="art-label">JAVA / 01</span></div>
+          <div class="project-content"><div class="project-type" data-i18n="consoleProject">PRIMEIRO PROJETO • CONSOLE</div><h3 data-i18n="projectOneTitle">Apresentação em Java</h3><p data-i18n="projectOneText">Programa que recebe nome e idade, apresenta uma saudação e pratica operações simples com os dados informados.</p><div class="tag-row"><span>Java</span><span>Scanner</span><span> lógica</span></div><a class="project-link" href="https://github.com/SEU-USUARIO/SEU-REPOSITORIO" target="_blank" rel="noreferrer"><span data-i18n="viewCode">Ver código</span> ↗</a></div>
+        </article>
+        <article class="project-card project-placeholder">
+          <div class="project-art art-api"><span class="art-symbol">{ }</span><span class="art-label">BACKEND / 02</span></div>
+          <div class="project-content"><div class="project-type" data-i18n="nextProject">PRÓXIMO PROJETO</div><h3 data-i18n="projectTwoTitle">API REST com Spring Boot</h3><p data-i18n="projectTwoText">Espaço reservado para um projeto futuro. Publique aqui quando estiver desenvolvido e testado.</p><div class="tag-row"><span>Java</span><span>Spring Boot</span><span>REST</span></div><span class="coming-soon" data-i18n="inProgress">Planejado</span></div>
+        </article>
+      </div>
+      <p class="projects-footnote" data-i18n="projectFootnote">Dica: substitua o link de exemplo pelo endereço real do seu repositório no GitHub.</p>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-heading"><span class="section-index">04 /</span><h2 data-i18n="journeyTitle">Minha jornada</h2></div>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-point active"></span><div><span class="timeline-date">2026 — <span data-i18n="current">ATUAL</span></span><h3 data-i18n="journeyOneTitle">Início na programação</h3><p data-i18n="journeyOneText">Estudando lógica de programação e fundamentos de Java, com prática em pequenos projetos.</p></div></div>
+        <div class="timeline-item"><span class="timeline-point"></span><div><span class="timeline-date" data-i18n="nextStep">PRÓXIMA ETAPA</span><h3 data-i18n="journeyTwoTitle">Backend e banco de dados</h3><p data-i18n="journeyTwoText">Aprofundar orientação a objetos, SQL, APIs, testes e Spring Boot.</p></div></div>
+        <div class="timeline-item"><span class="timeline-point"></span><div><span class="timeline-date" data-i18n="longTerm">OBJETIVO</span><h3 data-i18n="journeyThreeTitle">Primeira oportunidade em tecnologia</h3><p data-i18n="journeyThreeText">Contribuir com uma equipe, aprender com profissionais e evoluir como desenvolvedor backend.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel">
+        <span class="section-index">05 / <span data-i18n="contactLabel">CONTATO</span></span>
+        <h2 data-i18n="contactTitle">Vamos conversar?</h2>
+        <p data-i18n="contactText">Estou aberto a conexões, troca de conhecimento e oportunidades de entrada na área de tecnologia.</p>
+        <div class="contact-links">
+          <a href="mailto:victorsantosmoreira174@gmail.com" class="button button-primary"><span data-i18n="sendEmail">Enviar e-mail</span> ↗</a>
+          <a href="https://www.linkedin.com/in/victor-dos-santos-moreira-ramos-6a8694324/" target="_blank" rel="noreferrer" class="button button-secondary">LinkedIn ↗</a>
+          <a href="https://github.com/victormoreira007" target="_blank" rel="noreferrer" class="button button-secondary">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">VS</span><span>victor<span class="muted">.dev</span></span></a><span data-i18n="footer">Feito com dedicação e muitas linhas de código.</span><a href="#home" class="back-top" data-i18n="backTop">Voltar ao topo ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
